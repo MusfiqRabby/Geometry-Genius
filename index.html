@@ -37,7 +37,6 @@
       </div>
          </div>
       </div>
-
       <!-- Rectangle Card  -->
       <div class="card w-96 bg-base-100 shadow-xl">
         <figure><img src="images/rectangle.png" /></figure>
@@ -62,7 +61,6 @@
           </div>
         </div>
       </div>
-
   <!-- Parallelogram card  -->
   <div class="card w-96 bg-base-100 shadow-xl">
       <figure><img src="images/parallelogram.png" alt="parallelogram" /></figure>
@@ -106,8 +104,6 @@
         </div>
          </div>
      </div>
-
-
      <!-- Rhombus card  -->
     <div class="card w-96 bg-base-100 shadow-xl">
        <figure><img src="images/rhombus.png"/></figure>
@@ -121,7 +117,7 @@
             <input type="text" name="" id="rhombus-minor" placeholder="minor" class="w-24 text-2xl p-2 rounded-sm">
           </div>
           <div>
-            <p>Area: <span class="rhombus-area">0</span></p>
+            <p>Area: <span id="rhombus-area">0</span></p>
           </div>
 
          <div class="card-actions">
@@ -130,8 +126,24 @@
         </div>
          </div>
      </div>
-
-
+     <!-- Ellipse card  -->
+     <div class="card w-96 bg-base-100 shadow-xl">
+      <figure><img src="images/ellipse.png" /></figure>
+      <div class="card-body">
+        <h2 class="card-title">Ellipse</h2>
+        <p>Area(A) = πab </p>
+        <div class="flex gap-5">
+          <input type="text" name="" id="ellipse-pera" placeholder="a" class="w-24 text-2xl p-2 rounded-sm"><span>cm</span>
+          <input type="text" name="" id="ellipse-no" placeholder="b" class="w-24 text-2xl p-2 rounded-sm"><span>cm</span>
+        </div>
+        <div>
+          <p>Area: <span id="rhombus-area">0</span></p>
+        </div>
+        <div class="card-actions">
+          <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
+        </div>
+      </div>
+    </div>
 
      </div>
       <!-- aria calculation container -->
@@ -146,6 +158,7 @@
     <script src="./script-js/parallelogram-base.js"></script>
     <script src="./script-js/pentagon.js"></script>
     <script src="script-js/rhombus.js"></script>
+    <script src="script-js/ellipse.js"></script>
 
 </body>
 </html>
