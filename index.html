@@ -71,9 +71,9 @@
         <p>Area (A) = b X h</p>
         <div class="flex">
           <!-- parallelogram base -->
-          <input type="text" name="" id="para-base" class="w-24 text-2xl p-2 rounded-sm" placeholder="b=10"><span class="mr-4">cm</span>
+          <input type="text" name="" id="parallelogram-base" class="w-24 text-2xl p-2 rounded-sm" placeholder="base"><span class="mr-4">cm</span>
             <!-- parallelogram height -->
-            <input type="text" name="" id="para-height" class="w-24 text-2xl p-2 rounded-sm" placeholder="h=12"><span class="mr-4 ml-2">cm</span>
+            <input type="text" name="" id="parallelogram-height" class="w-24 text-2xl p-2 rounded-sm" placeholder="height"><span class="mr-4 ml-2">cm</span>
         </div>
         <div>
           <p class="text-2xl">Area: <span id="parallelogram-area">0</span> <span>cm<sup>2</sup></span></p>
@@ -83,30 +83,56 @@
        </div>
          </div>
     </div>
-
-
-     <!-- triangel card  -->
+     <!-- Pentagon card  -->
     <div class="card w-96 bg-base-100 shadow-xl">
-       <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+       <figure><img src="images/pentagon.png" /></figure>
         <div class="card-body">
-         <h2 class="card-title">Shoes!</h2>
-           <p>If a dog chews shoes whose shoes does he choose?</p>
-         <div class="card-actions justify-end">
-           <button class="btn btn-primary">Buy Now</button>
+         <h2 class="card-title">Pentagon</h2>
+         <p>Area[A]: 0.5 X p X b</p>
+         
+         <div class="flex gap-5">
+            
+          <input type="text" name="" id="pentagon-perimeter" placeholder="peri" class="w-24 text-2xl p-2 rounded-sm">
+            
+            <input type="text" name="" id="pentagon-apothem" placeholder="apo" class="w-24 text-2xl p-2 rounded-sm">
+          </div>
+
+          <div>
+            <p>Area: <span class="pentagon-area">0</span></p>
+          </div>
+
+         <div class="card-actions">
+           <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
         </div>
          </div>
      </div>
-    <!-- triangel card  -->
+
+
+     <!-- Rhombus card  -->
     <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
-                      </div>
-                    </div>
-    </div>
+       <figure><img src="images/rhombus.png"/></figure>
+        <div class="card-body">
+         <h2 class="card-title">Rhombus</h2>
+         <div>
+          <p>Area: <span class="pentagon-area">0</span></p>
+        </div>
+         <div class="flex gap-5">
+          <input type="text" name="" id="rhombus-perameter" placeholder="peri" class="w-24 text-2xl p-2 rounded-sm">
+            <input type="text" name="" id="rhombus-minor" placeholder="minor" class="w-24 text-2xl p-2 rounded-sm">
+          </div>
+          <div>
+            <p>Area: <span class="rhombus-area">0</span></p>
+          </div>
+
+         <div class="card-actions">
+           <button onclick="calculateRhombusArea()"
+           class="btn btn-primary w-full">Calculate</button>
+        </div>
+         </div>
+     </div>
+
+
+
      </div>
       <!-- aria calculation container -->
     <div class="w-96 border-2 border-gray-700 rounded-md"> 
@@ -118,5 +144,8 @@
     <script src="./script-js/triangle.calculate.js"></script>
     <script src="script-js/rectangle.area.js"></script>
     <script src="./script-js/parallelogram-base.js"></script>
+    <script src="./script-js/pentagon.js"></script>
+    <script src="script-js/rhombus.js"></script>
+
 </body>
 </html>
